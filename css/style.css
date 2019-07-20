@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(red,blue);
+}
+.container{
+    display: flex;
+    background: white;
+    width: 55%;
+    height: 70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(red, green, blue, alpha);
+}
+.container > div{
+    width: 50%;
+    text-align: center;
+}
+.left > img{
+    width: 50%;
+    padding-top: 90px;
+}
+.right{
+    padding: 20%;
+    padding-top: 80px;
+}
+.right>h5{
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 20px;
+    color: red;
+}
+form > input,form >button{
+    margin: 10px 0;
+    width: 80%;
+    padding:5px 10px;
+    border-radius: 3px;
+    border: none;
+
+}
+form > input{
+    border:1px solid lightslategray;
+
+}
+form >button{
+    border: 1px solid red;
+    background: blue;
+    padding: 6px 10px;
+    border-radius: 3px;
+    border:none;
+    color:white;
+    cursor: pointer;
+    /* transition-duration: 1s;
+    transition-delay: 1s; */
+}
+form>button:hover{
+    background:red;
+    color:blue;
+}
+@media screen and (max-width:1200px){
+    .wrapper{
+        background: blue;
+    }
+}
+@media screen and (max-width:800px){
+    .wrapper{
+        background:red;
+    }
+    .container{
+        display: block;
+    }
+    .left > img{
+        padding: 0;
+        padding-top: 20px;
+        width: 20%;
+
+    }
+    .left > img{
+        width: 100%;
+    }
+    .right{
+        padding: 0px;
+    }
+    .right>h5{
+        margin-top: 30px;
+    }
+
+}
